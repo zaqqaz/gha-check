@@ -1,0 +1,11 @@
+on:
+  push:
+    tags:
+      - 'v.*'
+
+jobs:
+  branch:
+    name: Check that it works
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
